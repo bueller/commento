@@ -2,6 +2,8 @@ version: '3'
 
 services:
   server:
+    labels:
+      shipyard.route: '/'
     image: registry.gitlab.com/commento/commento
     ports:
       - 8080:8080
